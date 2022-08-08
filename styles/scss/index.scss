@@ -170,6 +170,32 @@ body {
       justify-content: center;
       margin-top: 50px;
       margin-left: 45px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s ease;
+      z-index: 1;
+      &:before,
+      &:after {
+        background: $dark_red;
+        transition: 0.3s ease;
+        content: "";
+        position: absolute;
+        z-index: -1;
+      }
+    }
+    .bottom-animation {
+      &:before {
+        top: 0;
+        bottom: 0;
+        left: -120%;
+        transform: skewX(45deg);
+        width: 100%;
+      }
+      &:hover {
+        &:before {
+          width: 240%;
+        }
+      }
     }
     & > .label {
       display: flex;

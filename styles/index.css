@@ -157,6 +157,27 @@ body *::selection {
   justify-content: center;
   margin-top: 50px;
   margin-left: 45px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+.hero > .container > .button:before, .hero > .container > .button:after {
+  background: #a7000c;
+  transition: 0.3s ease;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+.hero > .container .bottom-animation:before {
+  top: 0;
+  bottom: 0;
+  left: -120%;
+  transform: skewX(45deg);
+  width: 100%;
+}
+.hero > .container .bottom-animation:hover:before {
+  width: 240%;
 }
 .hero > .container > .label {
   display: flex;
