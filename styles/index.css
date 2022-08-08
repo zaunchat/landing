@@ -86,10 +86,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 .hero > .container {
+  position: relative;
   width: 100%;
   max-width: calc(100vw - 300px);
   height: 100%;
-  border-inline: 1px solid rgba(255, 255, 255, 0.5);
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
 }
 .hero > .container > .title {
   font-weight: 700;
@@ -153,10 +154,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 .features > .container {
+  position: relative;
   height: 100%;
   width: 100%;
   max-width: calc(100vw - 300px);
-  border-inline: 1px solid rgba(255, 255, 255, 0.5);
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 }
 .features > .container > .line {
@@ -195,4 +197,12 @@ body::-webkit-scrollbar-thumb {
   line-height: 24px;
   width: 373px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.border {
+  position: absolute;
+  right: 110px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=index.css.map */
