@@ -105,6 +105,7 @@ body {
     height: 100%;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
     & > .title {
+      margin-left: 20px;
       font-weight: 700;
       font-size: 42px;
       line-height: 62px;
@@ -112,6 +113,7 @@ body {
       color: #ffffff;
     }
     & > .description {
+      margin-left: 20px;
       width: 559px;
       height: 72px;
       font-weight: 400;

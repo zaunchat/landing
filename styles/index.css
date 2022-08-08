@@ -93,6 +93,7 @@ body::-webkit-scrollbar-thumb {
   border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
 }
 .hero > .container > .title {
+  margin-left: 20px;
   font-weight: 700;
   font-size: 42px;
   line-height: 62px;
@@ -100,6 +101,7 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff;
 }
 .hero > .container > .description {
+  margin-left: 20px;
   width: 559px;
   height: 72px;
   font-weight: 400;
