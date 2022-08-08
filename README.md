@@ -1,2 +1,2 @@
 # landing
-🖼 Landing page built with pure Html, Css and Javascript
+🖼 Landing page built with pure Html, Scss and Javascript
