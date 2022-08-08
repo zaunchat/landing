@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/oet8egg.css");
+
 $super_dark_black: #111111;
 $mid_dark_black: #161616;
 $dark_black: #1c1c1c;
@@ -8,6 +10,7 @@ $dark_red: #a7000c;
 $navHeight: 64px;
 $heroHeight: 479px;
 $featuresHeight: 456px;
+$min-width: 1020px;
 
 * {
   margin: 0;
@@ -32,7 +35,7 @@ body {
   flex-direction: column;
   align-items: center;
   & > .container {
-    min-width: 1020px;
+    min-width: $min-width;
     min-height: 100%;
     display: flex;
     justify-content: space-between;
@@ -86,6 +89,67 @@ body {
 .hero {
   height: $heroHeight;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  & > .container {
+    min-width: $min-width;
+    height: 100%;
+    border-inline: 1px solid rgba(255, 255, 255, 0.5);
+    & > .title {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 62px;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+    & > .description {
+      width: 559px;
+      height: 72px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+
+      color: rgba(255, 255, 255, 0.7);
+    }
+    & > .second-label {
+      margin-top: 45px;
+    }
+    & > .first-label {
+      margin-top: 65px;
+    }
+    & > .button {
+      background: #ff4646;
+      width: 186px;
+      height: 48px;
+      border: 4px solid $dark_black;
+      outline: 1px solid #ffffff;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-left: 45px;
+    }
+    & > .label {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      & > .line {
+        width: 44px;
+        height: 2px;
+        background: #ff4646;
+      }
+      & > .text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #505050;
+      }
+    }
+  }
 }
 .features {
   width: 100%;
