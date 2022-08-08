@@ -31,6 +31,9 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: $light_red;
   }
+  *::selection {
+    background: $light_red;
+  }
 }
 
 .navbar {
