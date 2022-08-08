@@ -111,7 +111,7 @@ body {
     height: 100%;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
     & > .vector {
-      position:absolute;
+      position: absolute;
       right: -36px;
       top: 63px;
       z-index: 1;
@@ -203,12 +203,12 @@ body {
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
     & > .vector {
-      position:absolute;
+      position: absolute;
       right: -57px;
       top: 63px;
       z-index: 1;
     }
-    
+
     & > .divider {
       width: 70%;
       height: 1px;
@@ -293,4 +293,7 @@ body {
   width: 1px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+}
+.cant-select {
+  user-select: none;
 }
