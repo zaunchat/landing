@@ -104,6 +104,20 @@ body {
     max-width: $max-width;
     height: 100%;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
+    & > .ITCHAT_SVG {
+      position: absolute;
+      top: 130px;
+      left: 400px;
+    }
+    & > .title-bg {
+      width: 178px;
+      height: 60px;
+      background-color: $light_red;
+      position: absolute;
+      top: 100px;
+      left: 123px;
+      z-index: -1;
+    }
     & > .title {
       margin-left: 20px;
       font-weight: 700;
@@ -175,6 +189,32 @@ body {
     max-width: $max-width;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
+    & > .ss {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.3);
+      left: 60px;
+    }
+    & > .first_slash-slash {
+      position:absolute;
+      top: 117px;
+    }
+    & > .second_slash-slash {
+      position:absolute;
+      top: 300px;
+    }
+    & > .awesome_svg {
+      position: absolute;
+      right: 20px;
+      top: 66px;
+    }
+    & > .slash-slash {
+      position: absolute;
+      top: 0;
+      left: 100px;
+    }
+
     & > .line {
       position: absolute;
       left: 110px;
@@ -219,7 +259,7 @@ body {
 .footer {
 }
 .border {
-  position:absolute;
+  position: absolute;
   right: 110px;
   width: 1px;
   height: 100%;
