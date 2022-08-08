@@ -104,6 +104,12 @@ body {
     max-width: $max-width;
     height: 100%;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
+    & > .vector {
+      position:absolute;
+      right: -36px;
+      top: 63px;
+      z-index: 1;
+    }
     & > .ITCHAT_SVG {
       position: absolute;
       top: 130px;
@@ -189,6 +195,22 @@ body {
     max-width: $max-width;
     border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
+    & > .vector {
+      position:absolute;
+      right: -57px;
+      top: 63px;
+      z-index: 1;
+    }
+    
+    & > .divider {
+      width: 70%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0.1;
+      position: absolute;
+      top: 36px;
+      left: calc(50% - $max-width / 2 + 200.5px);
+    }
     & > .ss {
       font-weight: 400;
       font-size: 16px;
@@ -197,11 +219,11 @@ body {
       left: 60px;
     }
     & > .first_slash-slash {
-      position:absolute;
+      position: absolute;
       top: 117px;
     }
     & > .second_slash-slash {
-      position:absolute;
+      position: absolute;
       top: 300px;
     }
     & > .awesome_svg {

@@ -92,6 +92,12 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
 }
+.hero > .container > .vector {
+  position: absolute;
+  right: -36px;
+  top: 63px;
+  z-index: 1;
+}
 .hero > .container > .ITCHAT_SVG {
   position: absolute;
   top: 130px;
@@ -176,6 +182,21 @@ body::-webkit-scrollbar-thumb {
   max-width: calc(100vw - 300px);
   border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
+}
+.features > .container > .vector {
+  position: absolute;
+  right: -57px;
+  top: 63px;
+  z-index: 1;
+}
+.features > .container > .divider {
+  width: 70%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.1;
+  position: absolute;
+  top: 36px;
+  left: calc(50% - (100vw - 300px) / 2 + 200.5px);
 }
 .features > .container > .ss {
   font-weight: 400;
