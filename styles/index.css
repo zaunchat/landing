@@ -8,12 +8,67 @@ body {
   width: 100vw;
   background-color: #1c1c1c;
   overflow-x: hidden;
+  font-family: oswald, sans-serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 .navbar {
   height: 64px;
   width: 100%;
   background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar > .container {
+  min-width: 1020px;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > .container > .left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar > .container > .left > .title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.navbar > .container > .left > .divider {
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.navbar > .container > .left > .list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar > .container > .left > .list > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+}
+.navbar > .container > .left > .list > div > .title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar > .container > .right > .button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a7000c;
+  padding-block: 6px;
+  padding-inline: 18px;
+  outline: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .hero {

@@ -19,21 +19,78 @@ body {
   width: 100vw;
   background-color: $dark_black;
   overflow-x: hidden;
+  font-family: oswald, sans-serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 .navbar {
-    height: $navHeight;
-    width: 100%;
-    background-color: $super_dark_black;
+  height: $navHeight;
+  width: 100%;
+  background-color: $super_dark_black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > .container {
+    min-width: 1020px;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > .left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      & > .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+      & > .divider {
+        width: 1px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      & > .list {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        & > div {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          gap: 5px;
+          & > .title {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+    }
+    & > .right {
+      & > .button {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: $dark_red;
+        padding-block: 6px;
+        padding-inline: 18px;
+        outline: 1px solid rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
 }
 .hero {
-    height: $heroHeight;
-    width: 100%;
+  height: $heroHeight;
+  width: 100%;
 }
 .features {
-    width: 100%;
-    height: $featuresHeight;
-    background-color: $super_dark_black;
+  width: 100%;
+  height: $featuresHeight;
+  background-color: $super_dark_black;
 }
 .footer {
 }
