@@ -24,7 +24,7 @@ body {
 }
 .navbar > .container {
   width: 100%;
-  max-width: 1020px;
+  max-width: calc(100vw - 300px);
   min-height: 100%;
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ body {
 }
 .hero > .container {
   width: 100%;
-  max-width: 1020px;
+  max-width: calc(100vw - 300px);
   height: 100%;
   border-inline: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -149,7 +149,7 @@ body {
 .features > .container {
   height: 100%;
   width: 100%;
-  max-width: 1020px;
+  max-width: calc(100vw - 300px);
   border-inline: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 }

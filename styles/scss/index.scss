@@ -10,7 +10,7 @@ $dark_red: #a7000c;
 $navHeight: 64px;
 $heroHeight: 479px;
 $featuresHeight: 456px;
-$max-width: 1020px;
+$max-width: calc(100vw - 300px);
 
 * {
   margin: 0;
