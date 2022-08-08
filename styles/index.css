@@ -23,7 +23,8 @@ body {
   align-items: center;
 }
 .navbar > .container {
-  min-width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   min-height: 100%;
   display: flex;
   justify-content: space-between;
@@ -79,7 +80,8 @@ body {
   justify-content: center;
 }
 .hero > .container {
-  min-width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 100%;
   border-inline: 1px solid rgba(255, 255, 255, 0.5);
 }

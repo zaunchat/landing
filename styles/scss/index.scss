@@ -10,7 +10,7 @@ $dark_red: #a7000c;
 $navHeight: 64px;
 $heroHeight: 479px;
 $featuresHeight: 456px;
-$min-width: 1020px;
+$max-width: 1020px;
 
 * {
   margin: 0;
@@ -35,7 +35,8 @@ body {
   flex-direction: column;
   align-items: center;
   & > .container {
-    min-width: $min-width;
+    width: 100%;
+    max-width: $max-width;
     min-height: 100%;
     display: flex;
     justify-content: space-between;
@@ -92,8 +93,9 @@ body {
   display: flex;
   justify-content: center;
   & > .container {
-    min-width: $min-width;
-    height: 100%;
+    width: 100%;
+    max-width: $max-width;
+        height: 100%;
     border-inline: 1px solid rgba(255, 255, 255, 0.5);
     & > .title {
       font-weight: 700;
