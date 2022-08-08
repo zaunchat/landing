@@ -25,6 +25,12 @@ body {
   font-family: oswald, sans-serif;
   font-style: normal;
   font-weight: 200;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $light_red;
+  }
 }
 
 .navbar {
