@@ -52,6 +52,7 @@ body {
       align-items: center;
       gap: 40px;
       & > .title {
+        cursor: pointer;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
@@ -67,6 +68,7 @@ body {
         align-items: center;
         gap: 25px;
         & > div {
+          cursor: pointer;
           display: flex;
           align-items: center;
           height: 100%;
@@ -82,6 +84,7 @@ body {
     }
     & > .right {
       & > .button {
+        cursor: pointer;
         font-weight: 700;
         font-size: 12px;
         line-height: 18px;
@@ -149,6 +152,7 @@ body {
       margin-top: 65px;
     }
     & > .button {
+      cursor: pointer;
       background: #ff4646;
       width: 186px;
       height: 48px;

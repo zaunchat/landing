@@ -42,6 +42,7 @@ body::-webkit-scrollbar-thumb {
   gap: 40px;
 }
 .navbar > .container > .left > .title {
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -58,6 +59,7 @@ body::-webkit-scrollbar-thumb {
   gap: 25px;
 }
 .navbar > .container > .left > .list > div {
+  cursor: pointer;
   display: flex;
   align-items: center;
   height: 100%;
@@ -70,6 +72,7 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.8);
 }
 .navbar > .container > .right > .button {
+  cursor: pointer;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -136,6 +139,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 65px;
 }
 .hero > .container > .button {
+  cursor: pointer;
   background: #ff4646;
   width: 186px;
   height: 48px;
