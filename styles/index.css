@@ -151,4 +151,42 @@ body {
   width: 100%;
   max-width: 1020px;
   border-inline: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+.features > .container > .line {
+  position: absolute;
+  left: 110px;
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.features > .container > .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  margin-left: 56px;
+  margin-top: -20px;
+}
+.features > .container > .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: 30px;
+  margin-left: 130px;
+}
+.features > .container > .cards > .card > .title {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.features > .container > .cards > .card > .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 373px;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=index.css.map */
