@@ -1,0 +1,16 @@
+$maxw: 1300px;
+$margin: 50px;
+.wrapper {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    max-width: calc($margin + $maxw);
+    width: 100%;
+    margin-left: $margin;
+    background-color: red;
+  }
+}

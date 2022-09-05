@@ -1,3 +1,5 @@
+import { Container } from './utils';
+
 export function Navbar() {
-  return <div>Navbar</div>;
+  return <Container>Navbar</Container>;
 }

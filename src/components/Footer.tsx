@@ -1,3 +1,5 @@
+import { Container } from './utils';
+
 export function Footer() {
-  return <div>Footer</div>;
+  return <Container>Footer</Container>;
 }

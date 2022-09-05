@@ -1,3 +1,5 @@
+import { Container } from '@components/utils';
+
 export function YouWillGet() {
-  return <div>You will get</div>;
+  return <Container>You will get</Container>;
 }

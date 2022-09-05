@@ -1,3 +1,5 @@
+import { Container } from '@components/utils';
+
 export function Hero() {
-  return <div>Hero</div>;
+  return <Container>Hero</Container>;
 }
