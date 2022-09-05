@@ -1,0 +1,25 @@
+@import url('https://use.typekit.net/oet8egg.css');
+@import "./utilities/_variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $dark_black;
+  overflow-x: hidden;
+  font-family: oswald, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $light_red;
+  }
+  *::selection {
+    background: $light_red;
+  }
+}
