@@ -48,6 +48,7 @@ export function Footer() {
           </div>
         </div>
       </footer>
+      <div className={styles.copy_right}>© 2021 All Rights Reserved</div>
     </Container>
   );
 }
