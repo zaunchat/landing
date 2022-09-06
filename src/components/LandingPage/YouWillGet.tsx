@@ -2,7 +2,7 @@ import { Container } from '@components/utils';
 import styles from '@styles/components/landing/YouWillGet.module.scss';
 export function YouWillGet() {
   return (
-    <Container leftBorder backgroundColor={`#161616`}>
+    <Container leftBorder rightBorder backgroundColor={`#161616`}>
       <div className={styles.youWillGet}>
         <div className={styles.border}></div>
         <div className={styles.wrapper}>

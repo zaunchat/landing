@@ -2,7 +2,7 @@ import { Container } from '@components/utils';
 import styles from '@styles/components/landing/Hero.module.scss';
 export function Hero() {
   return (
-    <Container leftBorder backgroundColor={`transparent`}>
+    <Container leftBorder rightBorder backgroundColor={`transparent`}>
       <div className={styles.hero}>
         <div className={styles.label}>CHAT APPLICATION</div>
         <h1 className={styles.title}>
