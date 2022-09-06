@@ -1,0 +1,60 @@
+$label-w: 44px;
+$label-h: 2px;
+$label-m: 20px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 476px;
+  & > .label {
+    margin-top: 45px;
+    &:first-child {
+      margin-top: 65px !important;
+    }
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #565656;
+    left: calc($label-w + $label-m);
+    &::before {
+      content: '';
+      position: absolute;
+      width: $label-w;
+      height: $label-h;
+      background-color: #ff4646;
+      top: 8.7px;
+      left: calc(($label-w + $label-m) * -1);
+    }
+  }
+  & > .title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 62px;
+    color: #ffffff;
+  }
+  & > .description {
+    margin-top: 20px;
+    width: 562px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #818181;
+  }
+  & > button {
+    font-family: 'Oswald';
+    margin-top: 40px;
+    border: calc((9 / 2) * 1px) solid #1c1c1c;
+    outline: 1px solid #fff;
+    width: 195px;
+    height: 48px;
+    background: #ff4646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
