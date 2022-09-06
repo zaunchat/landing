@@ -1,0 +1,32 @@
+.footer {
+  height: 353px;
+  display: flex;
+  justify-content: space-between;
+  & > .downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+  }
+  & > .list {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    & > .title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #ffffff;
+    }
+    & > .items {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #595959;
+    }
+  }
+}
