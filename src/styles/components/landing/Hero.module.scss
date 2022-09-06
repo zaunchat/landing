@@ -31,6 +31,7 @@ $label-m: 20px;
     }
   }
   & > .title {
+    margin-left: 20px;
     margin-top: 15px;
     font-weight: 700;
     font-size: 42px;
@@ -49,6 +50,7 @@ $label-m: 20px;
     }
   }
   & > .description {
+    margin-left: 20px;
     margin-top: 20px;
     width: 562px;
     font-weight: 400;
@@ -58,6 +60,7 @@ $label-m: 20px;
   }
   & > button {
     font-family: 'Oswald';
+    margin-left: 55px;
     margin-top: 40px;
     border: calc((9 / 2) * 1px) solid #1c1c1c;
     outline: 1px solid #fff;
