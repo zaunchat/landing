@@ -18,7 +18,12 @@ export function Hero() {
             IN OTHER WORDS: THE MOST <span>PERFECT/BALANCED</span> CHAT PLATFORM
             FOR ALL PEOPLE
           </div>
-          <button className={styles._deth_dots}>REGISTER</button>
+          <button
+            className={styles._deth_dots}
+            onClick={() => (window.location.href = `#register`)}
+          >
+            REGISTER
+          </button>
         </div>
         <HeroSvgIcon />
       </div>

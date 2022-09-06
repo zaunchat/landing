@@ -39,7 +39,7 @@ export function Register() {
   }
   return (
     <Container backgroundColor={`transparent`}>
-      <div className={styles.register}>
+      <div className={styles.register} id="register">
         <div className={styles.title}>
           IS THAT LOOKING INSTRESTING?! REGISTER NOW!
         </div>
