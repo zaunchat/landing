@@ -1,6 +1,17 @@
 $label-w: 44px;
 $label-h: 2px;
 $label-m: 20px;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  & > svg {
+    z-index: 2;
+    position: relative;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -78,7 +89,7 @@ $label-m: 20px;
 }
 ._deth_dots {
   &::after {
-    font-family: "Inter";
+    font-family: 'Inter';
     content: '..';
     position: absolute;
     left: -70px;
