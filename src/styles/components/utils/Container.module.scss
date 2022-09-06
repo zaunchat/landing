@@ -1,5 +1,5 @@
 $maxw: 1300px;
-$margin: 50px;
+$margin: 100px;
 .wrapper {
   min-width: 100%;
   display: flex;
@@ -8,8 +8,7 @@ $margin: 50px;
   & > .container {
     display: flex;
     flex-direction: column;
-    max-width: calc($margin + $maxw);
-    width: 100%;
-    margin-left: $margin;
+    max-width: $maxw;
+    width: calc(100% - ($margin * 2));
   }
 }
