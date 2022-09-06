@@ -76,3 +76,16 @@ $label-m: 20px;
     color: #ffffff;
   }
 }
+._deth_dots {
+  &::after {
+    font-family: "Inter";
+    content: '..';
+    position: absolute;
+    left: -70px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.16em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

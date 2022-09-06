@@ -5,7 +5,7 @@ export function Hero() {
     <Container leftBorder rightBorder backgroundColor={`transparent`}>
       <div className={styles.hero}>
         <div className={styles.label}>CHAT APPLICATION</div>
-        <h1 className={styles.title}>
+        <h1 className={`${styles.title} ${styles._deth_dots}`}>
           MORE <span>FEATURES</span>, MORE FUN!
         </h1>
         <h2 className={styles.description}>
@@ -16,7 +16,7 @@ export function Hero() {
           IN OTHER WORDS: THE MOST <span>PERFECT/BALANCED</span> CHAT PLATFORM
           FOR ALL PEOPLE
         </div>
-        <button>REGISTER</button>
+        <button className={styles._deth_dots}>REGISTER</button>
       </div>
     </Container>
   );
