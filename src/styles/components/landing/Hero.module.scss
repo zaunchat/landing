@@ -25,6 +25,10 @@ $label-m: 20px;
       top: 8.7px;
       left: calc(($label-w + $label-m) * -1);
     }
+    span {
+      font-weight: 600;
+      color: #ffffff;
+    }
   }
   & > .title {
     margin-top: 15px;
