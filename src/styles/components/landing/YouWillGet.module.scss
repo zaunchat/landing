@@ -1,6 +1,15 @@
 .youWillGet {
   display: flex;
   padding-bottom: 70px;
+  & > .svg_container {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    & > svg {
+      min-width: 380px;
+      min-height: 323.2px;
+    }
+  }
   & > .border {
     margin-left: 100px;
     height: auto;
@@ -29,6 +38,7 @@
       top: -22px;
     }
     & > .cards {
+      width: fit-content;
       display: flex;
       flex-direction: column;
       gap: 45px;

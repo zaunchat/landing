@@ -1,3 +1,4 @@
+import { YouWillGetSvgIcon } from '@components/assets';
 import { Container } from '@components/utils';
 import styles from '@styles/components/landing/YouWillGet.module.scss';
 export function YouWillGet() {
@@ -37,6 +38,9 @@ export function YouWillGet() {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.svg_container}>
+          <YouWillGetSvgIcon />
         </div>
       </div>
     </Container>
