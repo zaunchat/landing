@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  & > .left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    & > .title {
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+    & > .divider {
+      width: 1px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    & > .list {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-family: 'Inter';
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      line-height: 15px;
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+  & > .right {
+    & > button {
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      outline: none;
+      width: 66px;
+      height: 31px;
+      background-color: transparent;
+      color: #a7000c;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+}
