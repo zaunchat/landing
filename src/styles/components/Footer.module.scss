@@ -6,7 +6,7 @@
   justify-content: center;
   font-size: 12px;
   line-height: 18px;
-  color: #ff4646;
+  color: var(--accent-color);
 }
 
 .footer {
@@ -14,24 +14,25 @@
   display: flex;
   justify-content: space-between;
 
-  &>.downloads {
+  .downloads {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-top: 80px;
   }
 
-  &>.list {
+  .list {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 32px;
 
-    &>.title {
+    .title {
       font-weight: 400;
       font-size: 18px;
       line-height: 27px;
       color: #ffffff;
+      text-transform: uppercase;
     }
 
     ul {
@@ -52,7 +53,7 @@
       }
 
       a:hover {
-        color: #ff4646;
+        color: var(--accent-color);
       }
     }
   }

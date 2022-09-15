@@ -3,18 +3,21 @@
   flex-direction: column;
   align-items: center;
   min-height: 216px;
-  & > .title {
+
+  .title {
     margin-block: 32px;
     font-weight: 700;
     font-size: 32px;
     line-height: 47px;
     color: #ffffff;
   }
-  & > .field {
+
+  .field {
     display: flex;
     width: calc(100% - (64 * 2) * 1px);
     height: 48px;
-    & > input {
+
+    input {
       color: white;
       font-family: 'Oswald';
       border: none;
@@ -25,29 +28,33 @@
       padding-inline-start: 16px;
       font-weight: 400;
       font-size: 16px;
+
       &::placeholder {
         color: #868686;
       }
     }
-    & > button {
+
+    button {
       cursor: pointer;
       font-family: 'Oswald';
       border: none;
       outline: none;
       height: 100%;
       min-width: 65px;
-      background-color: #ff4646;
+      background-color: var(--accent-color);
       font-weight: 700;
       font-size: 16px;
       line-height: 24px;
       color: #ffffff;
+
       &:disabled {
         cursor: not-allowed;
         opacity: 0.5;
       }
     }
   }
-  & > .registered {
+
+  .registered {
     width: calc(100% - (64 * 2) * 1px);
     font-weight: 400;
     font-size: 12px;
@@ -55,12 +62,13 @@
     color: #47ff44;
     margin-top: 10px;
   }
-  & > .error {
+
+  .error {
     width: calc(100% - (64 * 2) * 1px);
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #ff4444;
+    color: var(--accent-color);
     margin-top: 10px;
   }
 }

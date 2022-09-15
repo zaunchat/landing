@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 @import "./utilities/_variables.scss";
 
+:root {
+  --accent-color: #ff4646;
+  --background-color: #000;
+  --background-secondary-color: #121;
+  --text-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

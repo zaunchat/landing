@@ -1,30 +1,36 @@
 .youWillGet {
   display: flex;
   padding-bottom: 70px;
-  & > .svg_container {
+
+  .svg_container {
     min-height: 100%;
     display: flex;
     align-items: center;
-    & > svg {
+
+    svg {
       min-width: 380px;
       min-height: 323.2px;
     }
   }
-  & > .border {
+
+  .border {
     margin-left: 100px;
     height: auto;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
   }
-  & > .wrapper {
+
+  .wrapper {
     width: 100%;
     height: 100%;
-    & > svg {
+
+    svg {
       position: absolute;
       top: 0;
       left: 94px;
     }
-    & > .title {
+
+    .title {
       font-weight: 700;
       font-size: 40px;
       line-height: 59px;
@@ -33,7 +39,8 @@
       top: -20px;
       left: -45px;
     }
-    & > .divider {
+
+    .divider {
       width: 60%;
       height: 1px;
       background: rgba(255, 255, 255, 0.5);
@@ -42,29 +49,34 @@
       left: 150px;
       top: -22px;
     }
-    & > .cards {
+
+    .cards {
       width: fit-content;
       display: flex;
       flex-direction: column;
       gap: 45px;
-      & > .card {
+
+      .card {
         margin-left: 20px;
         display: flex;
         flex-direction: column;
         gap: 5px;
-        & > .title {
+
+        .title {
           font-weight: 400;
           font-size: 30px;
           line-height: 44px;
           color: rgba(255, 255, 255, 0.8);
         }
-        & > .description {
+
+        .description {
           width: 367px;
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           color: #727272;
           position: relative;
+
           &::after {
             content: '//';
             font-size: 12px;
