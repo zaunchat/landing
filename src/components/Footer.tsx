@@ -27,18 +27,18 @@ export function Footer() {
         <div className={styles.list}>
           <div className={styles.title}>PRODUCTS</div>
           <div className={styles.items}>
-            <div>APPLICATION</div>
-            <div>LOGIN</div>
-            <div>LANDING</div>
+            <a href="#">APPLICATION</a>
+            <a href="#">LOGIN</a>
+            <a href="#">LANDING</a>
           </div>
         </div>
         <div className={styles.list}>
           <div className={styles.title}>FOLLOW US</div>
           <div className={styles.items}>
-            <div>TWITTER</div>
-            <div>TELEGRAM</div>
-            <div>DISCORD</div>
-            <div>GITHUB</div>
+            <a href="#">TWITTER</a>
+            <a href="#">TELEGRAM</a>
+            <a href="#">DISCORD</a>
+            <a href="https://github.com/itchatapp">GITHUB</a>
           </div>
         </div>
         <div className={styles.list}>
