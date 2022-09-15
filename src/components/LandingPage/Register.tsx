@@ -3,15 +3,15 @@ import styles from '@styles/components/landing/Register.module.scss';
 import { ChangeEvent, useEffect, useState } from 'react';
 
 export function Register() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(``);
   const [sending, setSending] = useState(false);
-  const [error, setError] = useState('');
-  const [sent, setSent] = useState('');
-  
+  const [error, setError] = useState(``);
+  const [sent, setSent] = useState(``);
+
   useEffect(() => {
     setSent(window.localStorage.getItem(`sent`) || ``);
   }, []);
-  
+
   function isValidEmail(email: string) {
     if (!email) return false;
     return /^\w+([-+.']\w+)*@(gmail|outlock|hotmail)\.(com|net)*$/.test(email);
@@ -21,18 +21,22 @@ export function Register() {
     setEmail(e.target.value);
     if (e.target.value && !isValidEmail(e.target.value)) {
       setError(`this is not a valid email`);
-    } else setError('');
+    } else setError(``);
   }
-  
+
   function handleClick() {
     if (error) return;
 
     setSending(true);
 
-    fetch(`https://throbbing-haze-8c92.abdulrahman-8alah.workers.dev/?email=${encodeURIComponent(email)}`)
+    fetch(
+      `https://throbbing-haze-8c92.abdulrahman-8alah.workers.dev/?email=${encodeURIComponent(
+        email,
+      )}`,
+    )
       .then(() => {
         setSending(false);
-        localStorage.setItem('sent', email);
+        localStorage.setItem(`sent`, email);
         setSent(email);
       })
       .catch(() => {
@@ -40,7 +44,7 @@ export function Register() {
       });
   }
   return (
-    <Container backgroundColor={'transparent'}>
+    <Container backgroundColor={`transparent`}>
       <div className={styles.register} id="register">
         <div className={styles.title}>
           IS THAT LOOKING INTERESTING?! REGISTER NOW!

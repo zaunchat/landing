@@ -12,11 +12,21 @@ export function Container({
   children,
   backgroundColor,
   leftBorder,
-  rightBorder
+  rightBorder,
 }: Props) {
   return (
     <div className={styles.wrapper} style={{ backgroundColor }}>
-      <div className={[styles.container, leftBorder && styles.left_border, rightBorder && styles.right_border].filter(Boolean).join(' ')}>{children}</div>
+      <div
+        className={[
+          styles.container,
+          leftBorder && styles.left_border,
+          rightBorder && styles.right_border,
+        ]
+          .filter(Boolean)
+          .join(` `)}
+      >
+        {children}
+      </div>
     </div>
   );
 }
