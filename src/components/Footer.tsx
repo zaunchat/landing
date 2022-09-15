@@ -15,37 +15,35 @@ export function Footer() {
           <MicosoftStoreIcon />
         </div>
         <div className={styles.list}>
-          <div className={styles.title}>REPOSOTORIES</div>
-          <div className={styles.items}>
-            <div>API</div>
-            <div>CLIENT</div>
-            <div>LANDING</div>
-            <div>+19 MORE</div>
-          </div>
-        </div>
-        {/* TODO?: use li list */}
-        <div className={styles.list}>
-          <div className={styles.title}>PRODUCTS</div>
-          <div className={styles.items}>
-            <a href="#">APPLICATION</a>
-            <a href="#">LOGIN</a>
-            <a href="#">LANDING</a>
-          </div>
+          <div className={styles.title}>Repositories</div>
+          <ul className={styles.items}>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Client</a></li>
+            <li><a href="#">Landing</a></li>
+          </ul>
         </div>
         <div className={styles.list}>
-          <div className={styles.title}>FOLLOW US</div>
-          <div className={styles.items}>
-            <a href="#">TWITTER</a>
-            <a href="#">TELEGRAM</a>
-            <a href="#">DISCORD</a>
-            <a href="https://github.com/itchatapp">GITHUB</a>
-          </div>
+          <div className={styles.title}>Products</div>
+          <ul className={styles.items}>
+            <li><a href="#">Application</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Landing</a></li>
+          </ul>
         </div>
         <div className={styles.list}>
-          <div className={styles.title}>CONTACT US</div>
-          <div className={styles.items}>
-            <div>ITCHAT@SUPPORT.COM</div>
-          </div>
+          <div className={styles.title}>Follow Us</div>
+          <ul className={styles.items}>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="https://github.com/itchatapp">Github</a></li>
+          </ul>
+        </div>
+        <div className={styles.list}>
+          <div className={styles.title}>Contact Us</div>
+          <ul className={styles.items}>
+            <li><a href="mailto:itchat@support.com">itchat@support.com</a></li>
+          </ul>
         </div>
       </footer>
       <div className={styles.copy_right}>© 2022 All Rights Reserved</div>
