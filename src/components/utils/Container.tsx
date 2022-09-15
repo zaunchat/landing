@@ -2,7 +2,7 @@ import styles from '@styles/components/utils/Container.module.scss';
 import { CSSProperties } from 'react';
 
 interface Props {
-  children: unknown;
+  children: any;
   backgroundColor: CSSProperties['backgroundColor'];
   leftBorder?: boolean;
   rightBorder?: boolean;
